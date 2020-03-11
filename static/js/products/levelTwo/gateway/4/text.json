@@ -1,0 +1,13 @@
+{
+	"arr": [
+		"Based on HA1 .2 standard protocol",
+		"Built-in Ethernet 2.0 controller",
+		"Support 1 administrator account and 10 sub-accounts",
+		"Supports large number of 2,500 devices connection",
+		"Support 100 ZigBee devices and 30 groups",
+		"Each account supports 20 areas + 30 scenes + 20 timers",
+		"Each timer supports 20 devices or groups",
+		"Support multiple gateways in the LAN",
+		"Support Over-the-Air upgrade"
+	]
+}

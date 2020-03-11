@@ -1,0 +1,20 @@
+{
+	"arr": [
+		"Number of ZigBee Products: 360+",
+		"ZigBee Gateway+ ZigBee Controller with Power Metering SAC722 +ZigBee Daylight Sensor SDS500 + ZigBee Touch Switch STP590 + ZigBee Remote Controller SRC700",
+
+		"Project Requirements",
+		"The brightness of the lamp is adjusted by the ZigBee daylight sensor automatically, and the lamp is controlled by the ZigBee touch switch and remote controller manually",
+
+		"Lamp Type",
+		"150W LED Highbay lights ",
+
+		"Project Brief Introduction",
+		"This is a brand new project for factory buildings. The construction time of the project is long and the amount of engineering is large. Use ZigBee wireless products save a lot of costs for this project. This workshop has good daylighting, and it can reduce the working time of the lamp at full load by using the constant illumination. Greatly reduce energy consumption and extend lamp life. At the same time, a touch panel and a remote control are provided as manual control options. Illumination parameters can be seen in real time in the plant",
+
+		"More applications",
+		"Manufacturing, Refrigeration, Refinery, Platform."
+
+
+	]
+}

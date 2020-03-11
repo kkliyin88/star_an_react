@@ -1,0 +1,20 @@
+{
+	"arr": [
+		"Number of ZigBee Products: 1700+",
+		"ZigBee Gateway + ZigBee Driver SAD492+ ZigBee Driver SAD608+ ZigBee Motion Sensor SMS707+ZigBee Controller with Power Metering SAC722 + SAC491 ZigBee Controller",
+
+		"Project Requirements",
+		"To adjust the luminance of a certain area once any movements is detected through the daylight sensors automatically. And to adjust the color temperature according to the sunrise and set. Meanwhile power metering.",
+		"The Lamp Type",
+		"20w + 30w Down light, strip light, panel light",
+
+		"The Project Brief Introduction",
+		"This is a retrofit project. Dimming and color adjustable lamps are used inside the hotel, and a tablet is provided as a master control in each floor. ZigBee touch panel controls are available in public areas. All lamps are dimming and color adjustable lamps. Could be multiple controlled through tablet, pad, and phone.",
+
+		"More applications",
+		"Supermarket, Shopping malls, Showroom, Restaurant."
+
+
+
+	]
+}

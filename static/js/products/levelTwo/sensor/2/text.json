@@ -1,0 +1,12 @@
+{
+	"arr": [
+		"Based on HA1 .2 standard protocol",
+		"Built - in ZigBee 2.4 G wireless transceiver module",
+		"Supports large number of 2, 500 devices connection",
+		"The parameter could be set by applications",
+		"Single color (SC) and color changing temp(CCT) program are optional",
+		"IP65 waterproof",
+		"Light brightness would be adjusted according to your setting",
+		"Support Over-the-Air upgrade"
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"arr": [
+		"Number of ZigBee Products: 5000+ ",
+		"ZigBee Gateway + ZigBee SAC794 emergency control + SDS500 daylight sensor + SMS709 motion sensor",
+
+		"Project Requirements",
+		"Motion sensors starts to work after 22:00pm in public areas.",
+
+		"The Lamp Type",
+		"20W LED tube + 25W LED down light + emergency light",
+
+		"The Project Brief Introduction",
+
+		"This is a retrofit project. The customer needs the shortest time to complete project. ZigBee wireless lighting control solution could shorten the project time greatly.With the microwave group function, when any motion sensor  in the group detects movement, the lamps in this group would be lighted up 100%,. Without movements for 5mins, the lamps would be turned down to 30%.With ZigBee lighting control system, the working lifespan of the lamps would be prolonged, luminance in certain areas is well controlled, energy and economic saving. Lamps status and energy report could be easily gained through Web server. And Emergency lamps could be checked automatically monthly.",
+
+		"More applications",
+		"Hospital, Surgical center, Doctors office, Emergency"
+
+
+	]
+}
