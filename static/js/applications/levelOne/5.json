@@ -1,0 +1,21 @@
+{
+	"arr": [
+		"Number of ZigBee Products: 600+ ",
+		"ZigBee Gateway + ZigBee Controller with Power Metering SAC823 +ZigBee Daylight Sensor SDS500",
+
+		"Project Requirements",
+		"To adjust the brightness of the lamp by the ZigBee daylight sensor and motion sensor automatically",
+
+		"The Lamp Type",
+		"250W LED Highbay light",
+
+		"The Project Brief Introduction",
+		"This is a retrofit project. Some areas use daylight sensors to control luminance. Any motion sensor in certain area senses movement, the lamps would be lighted. Greatly reduce energy consumption and extend lamp life.",
+
+		"More applications",
+		"Transportation, Airport, Train/ bus station, Inventory."
+
+
+
+	]
+}

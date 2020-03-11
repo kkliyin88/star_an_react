@@ -1,0 +1,31 @@
+{
+	"arr":
+	[
+	  {
+	   "url":"/static/image/video/1.mp4",
+	    "defaultPic":"/static/image/video/1.png",
+	   "title":"Individual Daylight Sensor Control Effect"
+	     
+	  },
+	  {
+		"url":"/static/image/video/2.mp4",
+		 "defaultPic":"/static/image/video/2.png",
+		"title":"Individual Motion Sensor Control Effect"
+	  },
+	  {
+		"url":"/static/image/video/3.mp4",
+		 "defaultPic":"/static/image/video/3.png",
+		"title":"Standalone Daylight Sensor & Wired Motion Sensor"
+	  },
+	  {
+		"url":"/static/image/video/4.mp4",
+		"defaultPic":"/static/image/video/4.png",
+		"title":"Individual & Group Motion Sensor Control Effect"
+	  },
+	  {
+		"url":"/static/image/video/5.mp4",
+		"defaultPic":"/static/image/video/5.png",
+		"title":"Group Motion Sensor Control Effect"
+	  }
+	]
+}
