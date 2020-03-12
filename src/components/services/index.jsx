@@ -1,10 +1,12 @@
 import React from 'react';
+import less from './index.less'
 export default class Services extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             picArr: [
                 '/static/image/services/1.png',
+                '/static/image/services/2.png',
                 '/static/image/services/3.png',
                 '/static/image/services/4.png',
                 '/static/image/services/5.png',
@@ -16,22 +18,20 @@ export default class Services extends React.Component {
     }
     render() {
         return (
-            <div className='wrap' >
-                <section className='content'>
-                    <p className='title'>{this.state.title}</p>
+            <div className={less.wrap} >
+                <section className={less.content}>
+                    <p className={less.title}>{this.state.title}</p>
                     <p>{this.state.content}</p>
                 </section>
-                <section className='pic'>
+                <section className={less.pic}>
                     <ul >
-                        {this.state.picArr}
-                        {/* { this.state.picArr.map((item, i) => {
-                            return 
-                            (<li className='pointer' key={i}>
-                                <div className='img-pic' >
+                        { this.state.picArr.map((item, i) => {
+                            return (<li className={less.pointer} key={i}>
+                                <div className={less.img_pic} >
                                     <img src={item} />
                                 </div>
                             </li>)
-                        })} */}
+                        })}
                     </ul>
                 </section>
             </div >
