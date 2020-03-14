@@ -22,21 +22,15 @@ import ApplicationsDetail from './components/applications/detail/index.jsx';
 import Services from './components/services/index.jsx';
 import Videos from './components/videos/index.jsx';
 import Contacts from './components/contacts/index.jsx';
+import Head from './components/head/index.jsx';
 import Foot from './components/foot/index.jsx';
-import Column from 'antd/lib/table/Column';
+
 
 export default class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      menuArr: [
-        { link: '/about', name: 'about' },
-        { link: '/products', name: 'products' },
-        { link: '/applications', name: 'applications' },
-        { link: '/services', name: 'services' },
-        { link: '/videos', name: 'videos' },
-        { link: '/contacts', name: 'contacts' },
-      ]
+     
     }
   }
 
@@ -49,23 +43,7 @@ export default class App extends React.Component {
       <Layout className="layout" >
         {/* Header 头部区域 */}
         <Header style={{ height: 100, background: '#FFF', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', padding: '0 8% ' }}>
-            <div style={{ height: '31px', width: '113px', marginTop: ' 10px' }} >
-              <img style={{ height: '31px', width: '113px'}}  src='/static/image/head/logo.png' />
-            </div>
-            <ul>
-             
-              {this.state.menuArr.map((item, i) => {
-                return (
-                  <li key={i}>
-                    <Link to={item.link}>
-                      <span style={{ padding: '0 15px', color: '#555', fontSize: 18, height: '30px', lineHeight: '30px', borderRight: '1px solid #ddd' }}>{item.name}</span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+          <Head></Head>
         </Header>
         {/* 中间的 内容区域 */}
         <Content style={{ backgroundColor: '#fff', flex: 1 }}>
@@ -81,7 +59,6 @@ export default class App extends React.Component {
             <Route exact path="/contacts" component={Contacts}></Route>
           </div>
         </Content>
-
         {/* Footer 底部区域 */}
         <Footer style={{ textAlign: 'center', backgroundColor: '#444' }}>
           <div style={{ background: '#f5f5f5' }}>
@@ -90,7 +67,6 @@ export default class App extends React.Component {
 
         </Footer>
       </Layout>
-
     </HashRouter>
   }
 }
