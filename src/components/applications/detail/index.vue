@@ -1,6 +1,5 @@
 <template>
   <div class='wrap' >
-  
 	<section class='left'>
 		<img :src='pic' />
 	</section>

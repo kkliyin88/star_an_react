@@ -2,7 +2,6 @@ import React from 'react';
 import { Carousel, CarouselItem } from 'antd';
 import data from './data.js';
 import style from './index.less';
-console.log('style',style)
 export default class About extends React.Component {
     constructor(props) {
         super(props);
@@ -14,8 +13,8 @@ export default class About extends React.Component {
                     <Carousel effect="fade" autoplay>
                         {data.bannerArr.map((item, i) => {
                             return (
-                                <div className={style.banner_img}>
-                                    <img key={i} src={item.pic} />
+                                <div key={i} className={style.banner_img}>
+                                    <img  src={item.pic} />
                                 </div>
                             )
                         })}

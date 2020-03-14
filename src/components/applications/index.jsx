@@ -1,5 +1,6 @@
 import React from 'react';
 import less from './index.less';
+import { Link } from 'react-router-dom'
 export default class Applications extends React.Component {
     constructor(props) {
         super(props);
@@ -10,27 +11,27 @@ export default class Applications extends React.Component {
                 {
                     title_1: 'About us ',
                     piclink: '/static/image/applications/1.png',
-                    routerPath: { path: '/applications/levelOne', query: { id: 1 } },
+                    routerPath: { path: '/applications/detail', query: { id: 1 } },
                 },
                 {
                     piclink: '/static/image/applications/2.png',
-                    routerPath: { path: '/applications/levelOne', query: { id: 2 } },
+                    routerPath: { path: '/applications/detail', query: { id: 2 } },
                 },
                 {
                     piclink: '/static/image/applications/3.png',
-                    routerPath: { path: '/applications/levelOne', query: { id: 3 } },
+                    routerPath: { path: '/applications/detail', query: { id: 3 } },
                 },
                 {
                     piclink: '/static/image/applications/4.png',
-                    routerPath: { path: '/applications/levelOne', query: { id: 4 } },
+                    routerPath: { path: '/applications/detail', query: { id: 4 } },
                 },
                 {
                     piclink: '/static/image/applications/5.png',
-                    routerPath: { path: '/applications/levelOne', query: { id: 5 } },
+                    routerPath: { path: '/applications/detail', query: { id: 5 } },
                 },
                 {
                     piclink: '/static/image/applications/6.png',
-                    routerPath: { path: '/applications/levelOne', query: { id: 6 } },
+                    routerPath: { path: '/applications/detail', query: { id: 6 } },
                 },
             ],
         }
@@ -43,10 +44,12 @@ export default class Applications extends React.Component {
                         {
                             this.state.picArr.map((item, i) => {
                                 return (
-                                    <li style={{cursor:'pointer'}} key={i} onClick={this.goDetail(item)}>
+                                    <li style={{cursor:'pointer'}} key={i} onClick={this.goDetail.bind(this,item)}>
+                                       <Link to={`/applications/detail/${i+1}`}>
                                         <div className={less.img_pic} >
                                             <img src={item.piclink} />
                                         </div>
+                                        </Link>
                                     </li>
                                 )
                             })
@@ -57,7 +60,8 @@ export default class Applications extends React.Component {
         );
     }
     goDetail(item){
-        console.log('item',item)
+
+        // this.props.history.push(item.routerPath.path+'/'+item.routerPath.query.id)
     }
 
 }
