@@ -1,5 +1,8 @@
 import React from 'react';
 import style from './index.css';
+import Outter from '../fuzichuanzhi/outter.jsx';
+import store from '../../store';
+import {sendAction} from '../../action';
 export default class Foot extends React.Component {
     constructor(props) {
         super(props);
@@ -15,9 +18,16 @@ export default class Foot extends React.Component {
             ]
         };
     }
+    handleClick(){
+        console.log('触发了点击事件')
+        const action = sendAction();
+        store.dispatch(action);
+    }
     render() {
         return (
             <div className={style.foot}>
+                <Outter></Outter>
+                <button onClick={this.handleClick.bind(this)}>学习redux demo</button>
                 <ul className={style.foot_ul}>
                     <li className={style.foot_ul_li}>
                         {this.state.address.map((item,i) => {
