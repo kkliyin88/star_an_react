@@ -1,13 +1,13 @@
 import { object } from "prop-types"
 
 const initState ={
-    value:'默认值'
+    value:'默认值',
+    count:1
 }
 const reducer = (state=initState,action)=>{
-    console.log('reduce',state,action);
     switch(action.type){
         case 'send_type':
-            return object.assign({},state,action);
+            return Object.assign({},state,action);
             default:
                 return state
     }

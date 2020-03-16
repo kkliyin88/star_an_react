@@ -1,8 +1,12 @@
 import React from 'react';
 import style from './index.css';
 import Outter from '../fuzichuanzhi/outter.jsx';
-import store from '../../store';
-import {sendAction} from '../../action';
+import store from '../../redux/store';
+import {sendAction} from '../../redux/action';
+
+import ComA from '../../react_redux/comA.jsx';
+import ComB from '../../react_redux/comB.jsx';
+
 export default class Foot extends React.Component {
     constructor(props) {
         super(props);
@@ -26,8 +30,13 @@ export default class Foot extends React.Component {
     render() {
         return (
             <div className={style.foot}>
+                 <p>----------------redux--------------------------</p>
+                <span style={{color:'red'}}>{store.getState().value}</span>
                 <Outter></Outter>
                 <button onClick={this.handleClick.bind(this)}>学习redux demo</button>
+                <p>----------------react-redux--------------------------</p>
+                <ComA></ComA>
+                <ComB></ComB>
                 <ul className={style.foot_ul}>
                     <li className={style.foot_ul_li}>
                         {this.state.address.map((item,i) => {
