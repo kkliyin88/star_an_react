@@ -8,10 +8,12 @@ class ComB extends Component {
     render() { 
         return (
             <div>
-                111
+                {this.props.count}
             </div>
         );
     }
 }
- 
-export default ComB 
+const mapStateToProps = (state)=>{
+    return state
+}
+export default connect(mapStateToProps)(ComB)  

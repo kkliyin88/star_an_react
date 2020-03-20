@@ -5,11 +5,18 @@ const initState ={
     count:1
 }
 const reducer = (state=initState,action)=>{
-    switch(action.type){
+    console.log('触发了reducer')
+    switch(action.type){ 
         case 'send_type':
             return Object.assign({},state,action);
-            default:
-                return state
+            break;
+        case 'add_count':
+            return {
+                count:state.count+1
+            };
+            break;    
+        default:
+            return state
     }
 }
 module.exports={reducer};

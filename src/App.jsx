@@ -24,7 +24,7 @@ import Videos from './components/videos/index.jsx';
 import Contacts from './components/contacts/index.jsx';
 import Head from './components/head/index.jsx';
 import Foot from './components/foot/index.jsx';
-import { provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import store from './redux/store'
 
 export default class App extends React.Component {
@@ -41,7 +41,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <provider store={store}>
+      <Provider store={store}>
         <HashRouter>
           <Layout className="layout" >
             {/* Header 头部区域 */}
@@ -70,7 +70,7 @@ export default class App extends React.Component {
             </Footer>
           </Layout>
         </HashRouter>
-      </provider>
+      </Provider>
     )
   }
 }

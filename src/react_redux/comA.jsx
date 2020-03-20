@@ -6,12 +6,12 @@ class ComA extends Component {
         this.state = {  }
     }
     handleAdd(){
-        console.log('props',this.props)
+        this.props.sendAction();
     }
     render() { 
         return ( 
             <div>
-                <button onClick={this.handleAdd.bind(this)}></button>
+                <button onClick={this.handleAdd.bind(this)}>加 1</button>
             </div>
          );
     }
@@ -19,9 +19,9 @@ class ComA extends Component {
  
 const mapDispatchToProp = (dispatch)=>{
     return {
-       sendAction:()=>{
-        dispatch({    //ation
-            type:'add_action'
+       sendAction:()=>{ 
+        dispatch({    //ation 
+            type:'add_count'
         }) 
        } 
     }

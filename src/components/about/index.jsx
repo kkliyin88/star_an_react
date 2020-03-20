@@ -11,7 +11,7 @@ export default class About extends React.Component {
             <div className={style.wrap} >
                 <section className={style.banner}>
                     <Carousel effect="fade" autoplay>
-                        {data.bannerArr.map((item, i) => {
+                        {data.bannerArr.map((item,i) => {
                             return (
                                 <div key={i} className={style.banner_img}>
                                     <img  src={item.pic} />
@@ -25,15 +25,15 @@ export default class About extends React.Component {
                 </section>
                 <section className={style.content}>
                     <ul >
-                        {data.contentArr.map((item, i) => {
+                        {data.contentArr.map((item,i) => {
                             return (
                                 <li key={i}>
                                     <div className={style.text_box_top} >
                                         <p className={style.text_box_top_title} style={{cursor:'pointer'}}>{item.title_top}</p>
                                         <section>
-                                            {item.msg_top.map((item, ic) => {
+                                            {item.msg_top.map((item,i) => {
                                                 return (
-                                                    <p className={style.content_text} Key={ic}> {item}</p>
+                                                    <p className={style.content_text} key={i}> {item}</p>
                                                 )
                                             })}
                                         </section>
